@@ -5,6 +5,6 @@ import genspark.assignments.Assignment;
 public class StringConcat implements Assignment {
     public String solution(String str){
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return null;
+        return "cats " + str;
     }
 }

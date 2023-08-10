@@ -6,6 +6,11 @@ import java.util.ArrayList;
 public class RemoveTheOddBalls implements Assignment {
     public Object[] solution(ArrayList<String> words) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return null;
+
+        return words.stream()
+                .filter(s -> s.length() % 2 == 0)
+                .toArray();
+
+
     }
 }

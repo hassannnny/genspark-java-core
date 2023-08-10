@@ -6,6 +6,12 @@ import java.util.ArrayList;
 public class UpdateSpecificElement implements Assignment {
     public ArrayList<Integer> solution(ArrayList<Integer> list, int val, int index) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return new ArrayList<>();
+
+        if (list.size() > 0 && index >= 0 && index < list.size()) {
+
+            list.set(index, val);
+        }
+
+        return list;
     }
 }

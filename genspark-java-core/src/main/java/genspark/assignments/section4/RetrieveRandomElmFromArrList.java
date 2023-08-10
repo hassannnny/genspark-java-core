@@ -6,6 +6,14 @@ import java.util.ArrayList;
 public class RetrieveRandomElmFromArrList implements Assignment {
     public Integer solution(ArrayList<Integer> arrList, int elm) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return 0;
+
+        int num = 0;
+
+        if (arrList.size() > 0 && elm < arrList.size()) {
+
+            num = arrList.get(elm);
+        }
+
+        return num;
     }
 }
